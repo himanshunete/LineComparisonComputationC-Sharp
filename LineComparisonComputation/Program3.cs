@@ -7,7 +7,6 @@ namespace LineComparisonComputation
         static void Main(string[] args)
         {
             Console.WriteLine(" Welcome to Line Computation Program ");
-            //Coordinates
             //Coordinates of Line1
             double x1x = 4;
             double y1x = 6;
@@ -29,9 +28,14 @@ namespace LineComparisonComputation
             {
                 Console.WriteLine("Length of Two Lines are Equal");
             }
-            else
+            else if (lengthOfLine1 > lengthOfLine2)
             {
-                Console.WriteLine("Length of Two Lines are not Equal");
+                Console.WriteLine("Length of Line1 is Greater than Line 2 ");
+            }
+
+            else if (lengthOfLine1 < lengthOfLine2)
+            {
+                Console.WriteLine("Length of Line1 is lesser than Line 2 ");
             }
         } 
     }
